@@ -1,0 +1,8 @@
+package com.li.drools //
+    rule "test01"
+        when
+            eval(true);
+        then
+            system.out.println("test01");
+    end
+

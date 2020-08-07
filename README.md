@@ -1,3 +1,9 @@
+1,drl文件名不要求大小写，文件里第一行 package xxxx 可以自定义，但最好与包名保持一致。
+2，以rule开始，以end结尾。LHS:when 与 then之间的部分；RHS：then后面的部分，只有LHS为true时才会执行RHS。
+
+
+
+
 # drools-spring-boot
 
 规则引擎Drools与SpringBoot的使用
