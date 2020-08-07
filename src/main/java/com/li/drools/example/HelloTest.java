@@ -10,9 +10,8 @@ public class HelloTest {
         //kmodule方式连接
         KieContainer kc = KieServices.Factory.get().getKieClasspathContainer();
         KieSession ks = kc.newKieSession("helloKS");
-        ks.fireAllRules();
+        int count = ks.fireAllRules();
+        System.out.println("共执行了:"+count+"条规则。");
         ks.dispose();
     }
-
-
 }

@@ -19,8 +19,10 @@
         <ksession name="worldKS"/>
     </kbase>
 
-<!--    com.li.drools.rule-->
-    <kbase name="test01" packages="com.li.drools.rule.hello">
+<!--    com.li.drools.rule
+    注：这里配置的 packages 需要在与src/main下的包对应，即需要在src/main下建该包路径；
+    除此之外，还需要在resources下建该包路径-->
+    <kbase name="helloKB" packages="com.li.drools.example">
         <ksession name="helloKS"/>
     </kbase>
 

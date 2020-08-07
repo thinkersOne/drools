@@ -17,10 +17,8 @@ public class rule1 {
 
     private static void execute(KieContainer kc) {
         KieSession ksession = kc.newKieSession("rule1KS");
-
-
-        ksession.fireAllRules();
-
+        int count = ksession.fireAllRules();
+        System.out.println("共执行了:"+ count + "条规则。");
         ksession.dispose();
     }
 }

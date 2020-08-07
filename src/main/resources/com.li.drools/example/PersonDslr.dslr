@@ -1,0 +1,12 @@
+package example.personDslr;
+import com.li.drools.model.Person;
+expander PersonDSL.dsl
+rule "personDslr"
+    when
+        There is a Person with
+        -age is less than or equals to 30
+        -name equals "stilton"
+    then
+        公司给予你"《高级职称经理职位》"的荣誉称号
+end
+
